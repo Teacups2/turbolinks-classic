@@ -1,3 +1,5 @@
+require "addressable/uri"
+
 module Turbolinks
   # Changes the response status to 403 Forbidden if all of these conditions are true:
   # - The current request originated from Turbolinks
@@ -5,8 +7,8 @@ module Turbolinks
   module XDomainBlocker
     private
       def same_origin?(a, b)
-        a = URI.parse URI.escape(a)
-        b = URI.parse URI.escape(b)
+        a = Addressable::URI.parse a
+        b = Addressable::URI.parse b
         [a.scheme, a.host, a.port] == [b.scheme, b.host, b.port]
       end
 

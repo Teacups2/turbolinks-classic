@@ -11,4 +11,5 @@ Gem::Specification.new do |s|
   s.files    = Dir["lib/assets/javascripts/*.js.coffee", "lib/turbolinks.rb", "lib/turbolinks/*.rb", "README.md", "MIT-LICENSE", "test/*"]
   
   s.add_dependency 'coffee-rails'
+  s.add_dependency 'addressable'
 end

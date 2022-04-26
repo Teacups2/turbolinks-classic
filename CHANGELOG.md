@@ -1,3 +1,9 @@
+## Turbolinks 2.5.5 (April 26, 2022)
+
+*   Replace 'URI.parse URI.escape' by 'Addressable::URI.parse' and add dependency to 'addressable' gem
+
+    *Thomas Peyric*
+
 ## Turbolinks 2.5.4 (December 6, 2017)
 
 *   Support Rails 5.1+
